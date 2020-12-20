@@ -1,0 +1,66 @@
+Script started on Sun 20 Dec 2020 03:53:34 PM EST
+[susmita@centos246 ~]$ getent passwd chris holly som greg todd tina rocky  a[Kmatt fred
+chris:x:1002:1002::/home/chris:/bin/bash
+holly:x:1003:1002::/home/holly:/bin/bash
+som:x:1004:1002::/home/som:/bin/bash
+greg:x:1005:1003::/home/greg:/bin/bash
+todd:x:1006:1003::/home/todd:/bin/bash
+tina:x:1007:1003::/home/tina:/bin/bash
+rocky:x:1008:1004::/home/rocky:/bin/bash
+matt:x:1009:1004::/home/matt:/bin/bash
+fred:x:1010:1004::/home/fred:/bin/bash
+[susmita@centos246 ~]$ getent group passwd chris holly som greg todd tina rocky  matt fred[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgroup eng_dpt sales_dpt is_dpt
+eng_dpt:x:1002:
+sales_dpt:x:1003:
+is_dpt:x:1004:
+[susmita@centos246 ~]$ groups chris holly[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgetent group eng_dpt sales_dpt is_dptpasswd chris holly som greg todd tina rocky  matt fred[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgetent passwd chris holly som greg todd tina rocky  matt fred[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[1P[1P[1P[1@g[1@r[1@o[1@u[1@p[1@s[1@ 
+chris : eng_dpt
+holly : eng_dpt
+som : eng_dpt
+greg : sales_dpt
+todd : sales_dpt
+tina : sales_dpt
+rocky : is_dpt
+matt : is_dpt
+fred : is_dpt
+[susmita@centos246 ~]$ cd /
+[susmita@centos246 /]$ ls -l
+total 16
+lrwxrwxrwx.   1 root  root         7 Oct 29 13:24 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root  root      4096 Dec 20 12:16 [01;34mboot[0m
+drwxr-xr-x.  20 root  root      3120 Dec 20 12:24 [01;34mdev[0m
+drwxrwx--T.   2 holly eng_dpt     24 Dec 20 15:00 [37;44mengineering[0m
+drwxr-xr-x.  99 root  root      8192 Dec 20 14:26 [01;34metc[0m
+drwxr-xr-x.  13 root  root       147 Dec 20 14:05 [01;34mhome[0m
+drwxrwx--T.   2 matt  is_dpt      24 Dec 20 15:09 [37;44m_is[0m
+lrwxrwxrwx.   1 root  root         7 Oct 29 13:24 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root  root         9 Oct 29 13:24 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxrwxr-x.   4 root  wheel       36 Dec 20 12:24 [01;34mmedia[0m
+drwxr-xr-x.   2 root  root         6 Apr 11  2018 [01;34mmnt[0m
+drwxr-xr-x.   3 root  root        39 Dec 20 12:15 [01;34mopt[0m
+dr-xr-xr-x. 109 root  root         0 Dec 20 12:24 [01;34mproc[0m
+dr-xr-x---.   3 root  root       149 Dec 20 14:20 [01;34mroot[0m
+drwxr-xr-x.  29 root  root       840 Dec 20 12:47 [01;34mrun[0m
+drwxrwx--T.   2 tina  sales_dpt   24 Dec 20 15:05 [37;44msales[0m
+lrwxrwxrwx.   1 root  root         8 Oct 29 13:24 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x.   2 root  root         6 Apr 11  2018 [01;34msrv[0m
+dr-xr-xr-x.  13 root  root         0 Dec 20 12:24 [01;34msys[0m
+drwxrwxrwt.   9 root  root       283 Dec 20 13:46 [30;42mtmp[0m
+drwxr-xr-x.  13 root  root       155 Oct 29 13:24 [01;34musr[0m
+drwxr-xr-x.  19 root  root       267 Oct 29 13:30 [01;34mvar[0m
+[susmita@centos246 /]$ su -
+Password: 
+Last login: Sun Dec 20 15:50:31 EST 2020 on tty1
+[root@centos246 ~]# cd /engineering
+[root@centos246 engineering]# lss[K
+secret.txt
+[root@centos246 engineering]# cd/sales[K[K[K[K[K[K /sales
+[root@centos246 sales]# ls
+secret.txt
+[root@centos246 sales]# cd /s[Kis[K[K_is
+[root@centos246 _is]# ls
+secret.txt
+[root@centos246 _is]# logout
+[susmita@centos246 /]$ exit
+
+Script done on Sun 20 Dec 2020 03:58:16 PM EST
